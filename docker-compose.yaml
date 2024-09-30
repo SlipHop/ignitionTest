@@ -8,8 +8,10 @@ services:
       GATEWAY_ADMIN_USERNAME: admin  # Gateway admin username
       GATEWAY_ADMIN_PASSWORD: password123  # Gateway admin password
     volumes:
-      - ignition_data:/var/lib/ignition/data  # Persistent Ignition data
+     # - ignition_data:/var/lib/ignition/data  # Persistent Ignition data
+      - gateway-data:/usr/local/bin/ignition/data
     restart: unless-stopped  # Ensure the container restarts on failures or reboots
 
 volumes:
-  ignition_data:
+#  ignition_data:
+  gateway_data:
