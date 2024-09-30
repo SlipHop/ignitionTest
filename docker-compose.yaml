@@ -6,7 +6,7 @@ services:
       - "8060:8088"  # Exposing the Ignition web interface
     environment:
       GATEWAY_ADMIN_USERNAME: admin  # Gateway admin username
-      GATEWAY_ADMIN_PASSWORD: password123  # Gateway admin password
+      GATEWAY_ADMIN_PASSWORD: password  # Gateway admin password
     volumes:
      # - ignition_data:/var/lib/ignition/data  # Persistent Ignition data
       - gateway-data:/usr/local/bin/ignition/data
